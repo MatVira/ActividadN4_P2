@@ -9,6 +9,9 @@ import Titulo from "./components/Titulo";
 import Parrafo from "./components/Parrafo";
 import Enlace from "./components/Enlace";
 
+//  Listas y tablas
+import Lista from "./components/Lista";
+import Tabla from "./components/Tabla";
 
 
 function App() {
@@ -22,6 +25,11 @@ function App() {
       <Parrafo/>
 
       <Enlace/>
+
+      <br/>
+      <Lista/>
+      
+      <Tabla/>
 
     </div>
   );
