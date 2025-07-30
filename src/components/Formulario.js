@@ -1,4 +1,9 @@
 import React, { useState } from "react";
+
+
+import InputText from "./InputText";
+import InputEmail from "./InputEmail";
+import InputTel from "./InputTel";
 import Input from "./Input";
 import Boton from "./Boton";
 
@@ -19,8 +24,7 @@ function Formulario() {
       <h5 className="mb-3">Formulario de Inscripción</h5>
 
       <div className="mb-3">
-        <Input
-          type="text"
+        <InputText
           placeholder="Nombre completo"
           value={nombre}
           onChange={(e) => setNombre(e.target.value)}
@@ -46,8 +50,7 @@ function Formulario() {
       </div>
 
       <div className="mb-3">
-        <Input
-          type="tel"
+        <InputTel
           placeholder="Número de teléfono"
           value={telefono}
           onChange={(e) => setTelefono(e.target.value)}
@@ -55,8 +58,7 @@ function Formulario() {
       </div>
 
       <div className="mb-3">
-        <Input
-          type="email"
+        <InputEmail
           placeholder="Correo electrónico"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
