@@ -12,6 +12,13 @@ import Enlace from "./components/Enlace";
 //  Listas y tablas
 import Lista from "./components/Lista";
 import Tabla from "./components/Tabla";
+import Formulario from "./components/Formulario";
+import Input from "./components/Input";
+import Boton from "./components/Boton";
+
+
+//  Formularios
+
 
 
 function App() {
@@ -30,6 +37,11 @@ function App() {
       <Lista/>
       
       <Tabla/>
+
+      <br/>
+      <Formulario/>
+      <br/>
+
 
     </div>
   );
