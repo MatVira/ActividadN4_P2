@@ -1,4 +1,5 @@
-// src/components/Boton.js
+import React from "react";
+
 function Boton({ texto, onClick, type = "button" }) {
   return (
     <button type={type} onClick={onClick} className="btn btn-primary w-100">
