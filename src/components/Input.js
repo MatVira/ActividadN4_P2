@@ -1,13 +1,13 @@
 import React from "react";
 
-function Input({ type, placeholder, value, onChange }) {
-    <h5 className="mb-3">Inscríbete al club</h5>
+function Input({ type, placeholder, value, onChange, name }) {
   return (
     <input
       type={type}
       placeholder={placeholder}
       value={value}
       onChange={onChange}
+      name={name}
       className="form-control"
     />
   );
