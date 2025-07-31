@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+//  Inputs especializados
+
 import InputText from "./InputText";
 import InputEmail from "./InputEmail";
 import InputTel from "./InputTel";
@@ -38,11 +40,12 @@ function Formulario() {
       <h3 className="mb-4">Formulario de Inscripción</h3>
 
       <div className="row g-3">
-        <div className="col-md-6">
-          <InputText placeholder="Nombre completo" name="nombre" onInputChange={(e) => setNombre(e.target.value)} />
-        </div>
 
-        <div className="col-md-6">
+
+        <InputText/>
+
+
+        <div className="col-6">
           <Input
             type="number"
             placeholder="Edad"
@@ -51,7 +54,7 @@ function Formulario() {
           />
         </div>
 
-        <div className="col-12">
+        <div className="col-6">
           <Input
             type="date"
             placeholder="Fecha de nacimiento"
@@ -60,29 +63,21 @@ function Formulario() {
           />
         </div>
 
-        <div className="col-md-6">
-          <InputTel/>
-        </div>
+        <InputTel/>
 
-        <div className="col-md-6">
-          <InputEmail/>
-        </div>
+        <InputEmail/>
 
-        <div className="col-12">
-          <InputPassword/>
-        </div>
+        <InputPassword/>
 
-        <div className="col-12">
-          <InputURL/>
-        </div>
+        <InputURL/>
 
-        <div className="col-12">
-          <InputSearch />
-        </div>
+        <InputSearch />
+
 
         <div className="col-12 text-end">
           <Boton texto="Enviar inscripción" type="submit" />
         </div>
+        
       </div>
     </form>
   );

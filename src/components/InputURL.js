@@ -12,13 +12,15 @@ function InputURL({ placeholder = "Sitio web personal", name = "url", onInputCha
   };
 
   return (
-    <Input
-      type="url"
-      name={name}
-      placeholder={placeholder}
-      value={value}
-      onChange={handleChange}
-    />
+    <div className="col-md-6 mb-3">
+      <Input
+        type="url"
+        name={name}
+        placeholder={placeholder}
+        value={value}
+        onChange={handleChange}
+      />
+    </div>
   );
 }
 

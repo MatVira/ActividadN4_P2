@@ -17,10 +17,6 @@ import Input from "./components/Input";
 import Boton from "./components/Boton";
 
 
-//  Formularios
-
-
-
 function App() {
   return (
     <div className="p-4">

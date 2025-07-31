@@ -12,13 +12,15 @@ function InputSearch({ placeholder = "Buscar...", name = "search", onInputChange
   };
 
   return (
-    <Input
-      type="search"
-      name={name}
-      placeholder={placeholder}
-      value={value}
-      onChange={handleChange}
-    />
+    <div className="col-md-6 mb-3">
+      <Input
+        type="search"
+        name={name}
+        placeholder={placeholder}
+        value={value}
+        onChange={handleChange}
+      />
+    </div>
   );
 }
 

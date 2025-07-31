@@ -12,14 +12,15 @@ function InputText({ placeholder = "Nombre completo", name = "nombre", onInputCh
   };
 
   return (
-    <Input
-
-      type="text"
-      name={name}
-      placeholder={placeholder}
-      value={value}
-      onChange={handleChange}
-    />
+    <div className="col-12">
+      <Input
+        type="text"
+        name={name}
+        placeholder={placeholder}
+        value={value}
+        onChange={handleChange}
+      />
+    </div>
   );
 }
 

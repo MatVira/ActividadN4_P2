@@ -12,13 +12,15 @@ function InputPassword({ placeholder = "Contraseña", name = "password", onInput
   };
 
   return (
-    <Input
-      type="password"
-      name={name}
-      placeholder={placeholder}
-      value={value}
-      onChange={handleChange}
-    />
+    <div className="col-md-6 mb-3">
+      <Input
+        type="password"
+        name={name}
+        placeholder={placeholder}
+        value={value}
+        onChange={handleChange}
+      />
+    </div>
   );
 }
 

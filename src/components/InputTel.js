@@ -12,13 +12,15 @@ function InputTel({ placeholder = "Número de teléfono", name = "telefono", onI
   };
 
   return (
-    <Input
-      type="tel"
-      name={name}
-      placeholder={placeholder}
-      value={value}
-      onChange={handleChange}
-    />
+    <div className="col-12">
+      <Input
+        type="tel"
+        name={name}
+        placeholder={placeholder}
+        value={value}
+        onChange={handleChange}
+      />
+    </div>
   );
 }
 
