@@ -36,6 +36,7 @@ function Formulario() {
   };
 
   return (
+    
     <form className="card p-4 shadow mt-5 mb-3 container" onSubmit={manejarEnvio}>
       <h3 className="mb-4">Formulario de Inscripción</h3>
 

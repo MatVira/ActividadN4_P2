@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Input from "./Input";
 
-function InputSearch({ placeholder = "Buscar...", name = "search", onInputChange }) {
+function InputSearch({ placeholder = "Buscar", name = "search", onInputChange }) {
   const [value, setValue] = useState("");
 
   const handleChange = (e) => {

@@ -10,12 +10,14 @@ function Tabla() {
   ];
 
   return (
-    <div className="card shadow">
+    <div
+      className="card mb-4 shadow w-75 mx-auto"
+    >
       <div className="card-header bg-success text-white fw-bold">
-        Listado de alumnos
+        Tablas de alumnos
       </div>
       <div className="table-responsive">
-        <table className="table table-striped table-bordered mb-0 text-center">
+        <table className="table table-success table-striped mb-0 text-center">
           <thead className="table-light">
             <tr>
               {cabecera.map((col, index) => (

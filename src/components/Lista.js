@@ -9,17 +9,17 @@ function Lista() {
   ];
 
   return (
-    <div className="card mb-4 shadow">
-      <div className="card-header bg-primary text-white fw-bold">
-        Nuestros entrenamientos
+    <div className="card mb-4 shadow w-75 mx-auto">
+      <div className="card-header bg-warning text-white fw-bold">
+        Lista de entrenamientos
       </div>
-      <ul className="list-group list-group-flush">
+      <ol className="list-group list-group-numbered">
         {elementos.map((item, index) => (
           <li key={index} className="list-group-item">
             {item}
           </li>
         ))}
-      </ul>
+      </ol>
     </div>
   );
 }
